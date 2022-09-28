@@ -38,40 +38,40 @@ Before you try to start the bot, you need to complete the `config.json` file in 
     }
 }
 ```
-- `token`: Your discord bot's token
-- `prefix`: Your bot's command prefix *(for example: !help | ?help | gen!help)*
-- `genChannel`: Forced channel for `gen` command
-- `genCooldown`: Cooldown between two executions of `gen` command *(use milliseconds)*
-- `notfound_message`: Sends a message to the channel if the message starts with the prefix but does not exists
-- `error_message`: Sends a message to the channel if an error occured and this setting is "true"
+- `token`: Le token de votre bot discord
+- `prefix`: Le prefix du bot *(par exemple: !help | ?help | gen!help)*
+- `genChannel`:permettre de dire dans quelle salon le bot doit `gen` les compte
+- `genCooldown`:Cooldown de la commande `gen` command 
+- `notfound_message`: Envoie un message au canal si le message commence par le préfixe mais n'existe pas
+- `error_message`: Envoie un message au canal si une erreur s'est produite et que ce paramètre est "true
 
-You can change the `green`, `yellow`, `red` and `default` colors to another hex colors.
-
----
-
-## How it works?
-
-### Adding account/data
-Add an account or a data with the `add` command. The space character in the data parameter make the write wrong.
-- Example: `add example_service abcd`
-- Wrong example: `add example_service abcd` ~~`efg hijk`~~ <-- the last 2 arguments are not stored
+Vous pouvez changer les couleurs `green`, `yellow`, `red` et `default` en d'autres couleurs hexadécimales.
 
 ---
 
-### Account/data generating
-You can add account to the bot using `gen` command.
-- Example: `gen example_service`
+## Comment ça fonctionne?
+
+### Ajout de compte/données
+Ajoutez un compte ou une donnée avec la commande `add`. Le caractère espace dans le paramètre data rend l'écriture erronée.
+- Exemple : `add example_service abcd`
+- Mauvais exemple : `add example_service abcd` ~~`efg hijk`~~ <-- les 2 derniers arguments ne sont pas stockés
 
 ---
 
-### Creating service
-Create a service with `create` command.
-- Example: `create example_service`
+### Compte/génération de données
+Vous pouvez ajouter un compte au bot en utilisant la commande `gen`.
+- Exemple : `gen exemple_service`
 
-### Check service stock
-Check the stock folder's content.
-- Example: `stock`
+---
 
-### Check command list
-List bot commands.
-- Example: `help`
+### Création d'un service
+Créez un service avec la commande `create`.
+- Exemple : `créer exemple_service`
+
+### Vérifier le stock de service
+Vérifiez le contenu du dossier de stock.
+- Exemple : "stock"
+
+### Vérifier la liste des commandes
+Répertorier les commandes du bot.
+- Exemple : "aide"
